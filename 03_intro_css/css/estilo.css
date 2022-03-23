@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Mina&display=swap');
+
+body{
+    background-color: #fff;
+}
+header{
+    background-color: aqua;
+}
+.blanco p{
+    font-family: 'Mina', sans-serif;
+    font-size: 26px;
+}
+section{
+    border: purple 10px dashed ;
+    background-color: #ffffff;
+    width: 100%;
+}
+section .colores{
+    border: red solid 8px;
+    border-top-color: red;
+    border-right-color: chartreuse;
+    border-bottom-color: yellow;
+    width: 50%;
+}
+p{
+    font-family: 'Hurricane', cursive;
+}
+
+.texto{
+    font-family: 'Mina', sans-serif;
+    font-size: 30px;
+}
