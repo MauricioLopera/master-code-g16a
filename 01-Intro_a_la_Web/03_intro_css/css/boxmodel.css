@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+}
+
+.tarjeta{
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 3px 3px #000;
+}
+img{
+    width: 200px;
+    
+}
+.info{
+    display: inline-block;
+    width: 300px;
+}
