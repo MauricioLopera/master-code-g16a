@@ -36,7 +36,6 @@ a{
     display: flex;
     justify-content: center;
     margin: 18vh;
-    width: 100%;
 }
 
 h1{
@@ -140,7 +139,7 @@ html{
 }
 
 /* Inicia @media */
-@media (max-width:700px){
+@media screen and (max-width:700px){
     .menu-icon{
         display: block;
         float: right;
@@ -178,5 +177,22 @@ html{
     h3{
         font-size: 40px;
     }
-    
+    #productos .contenedor-productos{
+        flex-direction: column;
+    }
+    #productos .muestra{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px){
+    header{
+        height: 70vh;
+    }
+    #productos .muestra{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
 }
