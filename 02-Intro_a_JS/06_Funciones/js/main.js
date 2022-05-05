@@ -87,3 +87,37 @@
 //su nombre y la opcion que quiera.
 
 //4. realizar una funcion con la cual determinen si una cadena de texto es palindromo o no.
+
+
+
+function palindromo(texto){
+
+    //lectura de la cadena de texto que inicia de izquierda a derecha
+    var textoSinEspacios = [];
+    var indice = 0;
+    var textoFinal;
+
+    for(var i=0; i<texto.length; i++){
+        if(texto[i] == ' '){
+
+        }
+        else{
+            textoSinEspacios[indice] = texto[i];
+            indice++;
+        }
+    }
+// lectura de texto derecha a izquierda
+    var indiceAlreves = (textoSinEspacios - 1);
+
+    for(var i=0; i<textoSinEspacios.length; i++){
+        if(textoSinEspacios[i] != textoSinEspacios[indiceAlreves]){
+             textoFinal ='La oracion no es un palindromo';
+        }else
+        {
+        textoFinal = 'La oracion es un palindromo'
+    }
+    }
+    return textoFinal;
+}
+var texto = prompt('Ingresa una cadena de texto: ');
+alert(palindromo(texto));
