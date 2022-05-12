@@ -2,8 +2,8 @@
 // 1. Se requiere que cada alumno tenga: Nombre completo y sus calificaciones.
 // 2. Se requiere que el profesor indique cuantos estudiantes va a ingresar.
 // 3. Se requiere que el profesor indique cuantas notas digitara para cada alumno.
-// 4. Imprimir con Alert el promedio de cada estudiante.
-// 5. Imprimir con Alert el promedio general del grupo.
+// 4. Imprimir el promedio de cada estudiante en la columna de promedio.
+// 5. Imprimir el promedio general del grupo al final de la pagina.
 
 let cantidadAlumnos;
 let cantidadNotas;
@@ -11,6 +11,7 @@ let cantidadNotas;
 //creamos la funcion para genera la planilla
 function GenerarPlanilla(){
     let table = document.getElementById('planilla');
+    
     cantidadAlumnos = Number(document.getElementById('alumnos').value);
     cantidadNotas = Number(document.getElementById('notas').value);
 
@@ -68,6 +69,7 @@ function GenerarPlanilla(){
     }
 }
 
+//creamos la funcion para leer la planilla y calcular promedios
 function CalcularPromedio(){
     let sumaGeneral = 0;
     let promedioGeneral;
