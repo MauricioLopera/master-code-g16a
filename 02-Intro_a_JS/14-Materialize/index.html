@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s1 card blue lighten-4">1</div>
+            <div class="col s1 card blue lighten-4">2</div>
+            <div class="col s1 card blue lighten-4">3</div>
+            <div class="col s1 card blue lighten-4">4</div>
+            <div class="col s1 card blue lighten-4">5</div>
+            <div class="col s1 card blue lighten-4">6</div>
+            <div class="col s1 card blue lighten-4">7</div>
+            <div class="col s1 card blue lighten-4">8</div>
+            <div class="col s1 card blue lighten-4">9</div>
+            <div class="col s1 card blue lighten-4">10</div>
+            <div class="col s1 card blue lighten-4">11</div>
+            <div class="col s1 card blue lighten-4">12</div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3 card blue lighten-4">1</div>
+            <div class="col s6 m3 card blue lighten-4">2</div>
+            <div class="col s6 m3 card blue lighten-4">3</div>
+            <div class="col s6 m3 card blue lighten-4">4</div>
+        </div>
+        <div class="row">
+            <div class="col s6 m2 card blue lighten-4">1</div>
+            <div class="col s6 m2 offset-m3 card blue lighten-4">2</div>
+            <div class="col s6 m2 offset-m3 card blue lighten-4">3</div>
+        </div>
+        <div class="row">
+            <div id="1" class="col s4 card blue lighten-4 transicion">1</div>
+            <div class="col s4 card blue lighten-4">2</div>
+            <div id="3" class="col s4 card blue lighten-4 transicion">3</div>
+        </div>
+        <div class="row">
+            <button onclick="PullPush()" class="btn waves-effect waves-light blue lighten-2" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+        </div>
+        <div class="row">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

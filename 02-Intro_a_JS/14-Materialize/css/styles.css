@@ -1,0 +1,6 @@
+.transicion{
+    transition: transform 1s !important;
+}
+.transicion:hover{
+    transform: rotate(10deg) !important;
+}
